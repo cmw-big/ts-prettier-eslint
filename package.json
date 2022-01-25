@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "lint": "lint-staged"
   },
   "keywords": [],
   "author": "",
@@ -34,5 +34,11 @@
     "src/**/*.{js,ts,jsx,tsx}": [
       "eslint --fix"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run test", 
+      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS"
+    }
   }
 }
