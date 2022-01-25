@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "lint-staged"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
@@ -37,8 +36,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged", 
-      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS"
+      "pre-commit": "lint-staged"
     }
   }
 }
