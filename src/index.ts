@@ -1,3 +1,1 @@
-import * as dayjs from 'dayjs'
-
-console.log(dayjs)
+let a     =1
